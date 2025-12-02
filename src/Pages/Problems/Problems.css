@@ -1,0 +1,115 @@
+.problems-page {
+  background-color: #0d1117;
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.problems-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.problems-header h1 {
+  color: #00ffcc;
+  font-size: 2.2rem;
+}
+
+.problems-header p {
+  color: #a0f0e0;
+  font-size: 1.1rem;
+}
+
+/* Leaderboard */
+.leaderboard {
+  margin-bottom: 2rem;
+}
+
+.leaderboard h2 {
+  color: #00ffcc;
+  margin-bottom: 1rem;
+}
+
+.leaderboard-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.leader-card {
+  flex: 1 1 200px;
+  background-color: #1f2937;
+  border-radius: 10px;
+  padding: 1rem;
+  border: 1px solid #00ffcc;
+  box-shadow: 0 0 10px #00ffcc40;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.leader-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px #00ffcc80;
+}
+
+.leader-card.top-1 { border-color: #ff00ff; }
+.leader-card.top-2 { border-color: #00ffff; }
+.leader-card.top-3 { border-color: #ffcc00; }
+
+/* Filter buttons */
+.filter-section {
+  margin: 2rem 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-section button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  border: 1px solid #00ffcc;
+  background-color: #1f2937;
+  color: #00ffcc;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.filter-section button:hover {
+  background-color: #00ffcc;
+  color: #0d1117;
+}
+
+/* Problem list */
+.problem-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.problem-card {
+  background-color: #1f2937;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #00ffcc;
+  box-shadow: 0 0 5px #00ffcc40;
+}
+
+/* Follow-up section */
+.problems-follow-up {
+  margin-top: 2rem;
+  padding: 2rem;
+  border: 1px solid #00ffcc;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #00ffcc20, #ff00ff20);
+}
+
+.problems-follow-up h2 {
+  color: #00ffcc;
+  margin-bottom: 1rem;
+}
+
+.problems-follow-up p {
+  color: #e0fff7;
+  font-size: 1.1rem;
+}

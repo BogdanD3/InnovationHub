@@ -1,0 +1,14 @@
+.problem-card {
+  background-color: #1f2937;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem;
+  width: 250px;
+  color: #ffffff;
+  transition: transform 0.2s;
+}
+
+.problem-card:hover {
+  transform: scale(1.05);
+  border: 1px solid #00ffcc;
+}
