@@ -1,3 +1,4 @@
+import GroupChat from "../../Components/GroupChat/GroupChat";
 import "./Home.css";
 
 const activeChats = [
@@ -42,6 +43,10 @@ const Home = () => {
             </select>
             <button>Pošalji</button>
           </div>
+        </div>
+
+        <div className="group-chat-wrapper">
+          <GroupChat />
         </div>
 
         <section className="follow-up">

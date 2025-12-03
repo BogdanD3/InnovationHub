@@ -8,6 +8,8 @@ import Home from "./Pages/Home/Home";
 import Problems from "./Pages/Problems/Problems";
 
 import "./Global.css";
+import Dashboard from "./Pages/Dashboard/Dashboard";
+import TetrisPage from "./Pages/TetrisPage";
 
 function App() {
   return (
@@ -27,7 +29,9 @@ function App() {
         <div className="global-content">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/problems" element={<Problems />} />
+            <Route path="/tetris" element={<TetrisPage />} />
           </Routes>
         </div>
 

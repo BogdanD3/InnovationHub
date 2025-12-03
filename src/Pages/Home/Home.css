@@ -129,3 +129,87 @@
   color: #e0fff7;
   font-size: 1.1rem;
 }
+
+/* Add / update in Home.css or a separate GroupChat.css */
+
+/* Full group chat container */
+.group-chat-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 40rem; /* Set max height */
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 0.5rem; /* Inner padding */
+}
+
+/* Chat messages area */
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Individual message card */
+.chat-card {
+  padding: 0.6rem;
+  border-radius: 6px;
+  background-color: #1f2937;
+  border-left: 4px solid #00ffcc;
+  color: #ffffff;
+  animation: fadeIn 0.3s ease;
+  word-wrap: break-word;
+}
+
+/* Typing indicator */
+.typing-indicator {
+  font-style: italic;
+  opacity: 0.8;
+  padding: 0.6rem;
+  border-radius: 6px;
+  border-left: 4px solid #ffbb28;
+  background-color: #1f2937;
+  color: #ffffff;
+}
+
+/* Input area */
+.chat-input-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.chat-input-container input {
+  flex: 1;
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #00ffcc;
+  background-color: #0d1117;
+  color: #ffffff;
+}
+
+.chat-input-container button {
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #00ffcc;
+  background-color: #0d1117;
+  color: #00ffcc;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.chat-input-container button:hover {
+  background-color: #00ffcc;
+  color: #0d1117;
+  box-shadow: 0 0 10px #00ffcc80;
+}
+
+.group-chat-container {
+  margin-top: 3rem;
+}
